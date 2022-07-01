@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+body{
+    background-color: hsl(27, 66%, 92%);
+  
+}
+hr{
+    width: 100%;
+}
+p,h1,h2{
+    font-family: 'DM sans';
+}
+h2{
+    color:  hsl(25, 47%, 15%);
+}
+.overall{
+ display: flex;
+ flex-direction: column;
+ align-content: center;
+ justify-content: center;
+}
+.chart-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.top{
+  
+    flex-direction:row;
+    justify-content:space-between;
+    background-color:  hsl(10, 79%, 65%);
+    color: #fff;
+    
+}
+.top div p{
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #ffffffbd;
+}
+.top div h2{
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #fff;
+}
+.mid,.top{
+    display: flex;
+    width: 424px;
+    margin: auto;
+    padding: 1.5rem 1.2rem;
+    border-radius: 15px;
+}
+.mid{
+    margin-top: 1rem;
+    background-color: hsl(33, 100%, 98%);
+    flex-direction: column;
+    align-items:space-between;
+}
+.mid-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.chart{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.mid p{
+    color: #adadad;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.mid h2{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.mid-bottom-1 h2{
+    font-size: 2rem;
+}
+.mid-bottom-2{
+    font-size: 0.8rem;
+}
+
+ p, h2{
+    margin: 0;
+}
+.blue{
+    background-color: hsl(186, 34%, 60%);
+}
+.red{
+    background-color: #EC755D ;
+}
+.chart-bar{
+    width: 80%;
+    border-radius: 5px;
+}
+.chart-bar:hover{
+    opacity: 0.8;
+}
+.hover-amount{
+    background-color: hsl(25, 47%, 15%);
+    padding: 0.4rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    visibility: hidden;
+}
+.hover-amount p{
+    color: white;
+}
+.chart:hover > .hover-amount{
+    visibility: visible;
+}
+@media screen and (max-width:375px){
+    .mid, .top{
+        width: 80%;
+    }
+    .chart-div{
+        transform: scale(0.8);
+    }
+    .hover-amount{
+        margin-top: 0;
+    }
+}
